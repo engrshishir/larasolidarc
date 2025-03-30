@@ -8,6 +8,6 @@ enum Role: string
 {
     case ADMIN = 'Admin';
     case SUPER_ADMIN = 'Super Admin';
-    case MANAGER = 'Moderator';
+    case MODERATOR = 'Moderator';
     case CASHIER = 'Cashier';
 }
