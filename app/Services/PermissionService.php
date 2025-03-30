@@ -8,11 +8,12 @@ use App\Repositories\PermissionRepository;
 
 class PermissionService extends CrudService
 {
-    public function __construct(private readonly PermissionRepository $permissionRepository)
-    {
+    public function __construct(
+        private readonly PermissionRepository $permissionRepository
+    ) {
         parent::__construct(
             $permissionRepository,
-            fn() => __('Role not found.')
+            fn() => __('Permission not found.')
         );
     }
 
